@@ -3,9 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/verify1">
+    android:background="@drawable/verify1"
+    tools:context=".SettingsVerify">
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -13,6 +15,7 @@
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        android:contentDescription="Open settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
@@ -27,6 +30,7 @@
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        android:contentDescription="Open apps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -41,6 +45,7 @@
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        android:contentDescription="Open tasks"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.627"
@@ -55,6 +60,7 @@
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        android:contentDescription="Open leaderboards"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
@@ -69,6 +75,7 @@
         android:layout_height="188dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        android:contentDescription="Confirm settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"

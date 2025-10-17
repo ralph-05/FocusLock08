@@ -1,6 +1,8 @@
 package com.group8.focuslock_application
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,11 +14,18 @@ class verification : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.verification_page)
 
-        // Handles padding for system bars (optional)
+        // Optional: adjusts layout for system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // When proceed button is clicked, go to AppsOnTimeout
+        val proceedButton = findViewById<ImageButton>(R.id.proceedButton)
+        proceedButton.setOnClickListener {
+            val intent = Intent(this, AppsOnTimeout::class.java)
+            startActivity(intent)
         }
     }
 }
